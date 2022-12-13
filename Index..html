@@ -1,0 +1,76 @@
+<html>
+
+<head> 
+	<meta charset="utf-8"/>
+	<title>Inicio</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="Icon.png">
+		<Script language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+
+	</script>
+</head>
+
+<body background="Background.png">
+	<img width="1500" height="300" src="Banner.jpg">
+	<table bgcolor="#E31616" align="right" border="5">
+	<tr>
+	<td><a href="Index.html">Inicio</a></td>
+	<td><a href="Fundamentos.html">Fundamentos</a></td>
+	<td><a href="Mecánicas.html">Mecánicas</a></td>
+	<td><a href="Formulario.html">Formulario</a></td>
+	</tr>
+	</table>
+	<br><br>
+	<ul>
+	<li>
+	<h1>Introducción:</h1><div> Super Smash Bros ultimate es un juego de lucha y acción para la Nintendo Switch. 
+	Fue anunciado por primera vez al final del Nintendo Direct el 8 de Marzo de 2018 y finalmente se reveló el 12 de Junio en el E3 de 2018.<br><br>
+	Es la quinta entrega de la saga Super Smash Bros. El juego salió en todo el mundo el 7 de Diciembre de 2018.</div>
+	</li>
+	</ul>
+	<br>
+	<center>
+	<h1> Presentación: </h1>
+	<iframe width="916" height="515" src="https://www.youtube.com/embed/EXnbMp1yr1k" title="Super Smash Bros. Ultimate - Everyone is here! (Nintendo Switch)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<img class="img1" src="Intro.jpg" height="300" width="450"></img>
+	<br><br><br>
+	<div class="centrado"> El juego cuenta con 89 personajes jugables con el contenido descargable, 103 escenarios distintos (305 si se cuentan las formas omega y campo de batallla por separado) y con una gran variedad de canciones, 1068, siendo la librería de música la más amplia de toda la saga. </div>
+	<h2> Sergio Palacios López <br>
+	<script>
+	DameLaFechaHora();
+	</script>
+	</h2>
+	</center>
+</body>
+
+</html>

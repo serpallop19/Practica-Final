@@ -1,0 +1,129 @@
+<html>
+
+<head> 
+	<meta charset="utf-8"/>
+	<title>Fundamentos</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="Icon.png">
+		<Script language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+
+	</script>
+	
+</head>
+
+<body background="Background.png">
+	<img width="1500" height="300" src="Banner.jpg">
+	<table bgcolor="#E31616" align="right" border="5">
+	<tr>
+	<td><a href="Index.html">Inicio</a></td>
+	<td><a href="Fundamentos.html">Fundamentos</a></td>
+	<td><a href="Mecánicas.html">Mecánicas</a></td>
+	<td><a href="Formulario.html">Formulario</a></td>
+	</tr>
+	</table>
+	<br><br>
+	<ul>
+	<li>
+	<h1>Fundamentos:</h1><h2>En este apartado vamos a ver la terminología y los movimientos principales que tenemos según en cada momento y situación. Dicho apartado puede dividirse en tres secciones:</h2><br>
+	</li>
+	<li>
+	<h1>Movimiento:</h1>
+		<ul>
+		<li>
+		<h2><b>Caminar y correr:</b> Lo primero se hace pulsando suavemente el stick analógico izquierdo, lo segundo se hace avanzando con el stick a toda velocidad hacia una dirección y manteniendo la palanca.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Walking.gif" width="600" height="338"></td><td><img src="Running.gif" width="600" height="338"></td></tr>
+			</table>
+		</li>
+		<li>
+		<h2><b>Salto:</b> Hay dos tipos de salto. Salto corto y largo, además del salto en mitad del aire. Para el salto corto se mantiene pulsado el botón y para el largo se toca durante un momento</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Jumping.gif" width="600" height="338"></td></tr>
+			</table>
+		</li>
+		<li>
+		<h2><b>Finta:</b> Es posible además de esquivar en el suelo y rodar, esquivar en el aire hacia cualquier dirección. Se suele tardar bastante en recuperarse de la esquiva así que es recomendable no abusar.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Esquiva.jpg" width="600" height="338"></td><td><img src="Esquiva2.jpg" width="600" height="338"></td></tr>
+			</table>
+		</li>
+		</ul>
+	</li>
+	<li>
+	<h1>Ataques:</h1>
+		<ul>
+		<li>
+		<h2><b>Ataques neutrales:</b> Son los ataques más sencillos y se hacen pulsando el botón de ataque (A) sin tocar en ninguna dirección la palanca. Es posible también hacerlos en el aire.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Neutral.gif" width="600" height="338"></td>
+			</table>
+		</li>
+		<li>
+		<h2><b>Dash attack (embestida):</b> Estos ataques suelen tener una gran potencia de ataque pero te dejan bastante expuesto a recibir golpes. Se realizan pulsando el botón de ataque mientras corres.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Dashattack.gif" width="600" height="338"></td>
+			</table>
+		</li>
+		<li>
+		<h2><b>Ataques fuertes: </b> A pesar de llamarse ataques fuertes, no hacen mucho daño, pero dependiendo del personaje tienen muchas utilidades. Se realizan moviendo la palanca hacia cualquier dirección sin mantener el botón de ataque.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Tilt-attacks.gif" width="600" height="338"></td>
+			</table>
+		</li>
+		<h2><b>Ataques smash: </b> Son los ataques que realizan más daño pero suelen ser bastante lentos y muy castigables. Se realizan moviendo la palanca hacia cualquier dirección y manteniendo el botón de ataque pulsado.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Smash attacks.jpeg" width="600" height="338"></td>
+			</table>
+		</li>
+		</li>
+		<h2><b>Ataques especiales: </b> Son los ataques más variados del juego, ya que son únicos de cada personaje. Se realizan pulsando en cualquier dirección el botón de ataques especiales (B) o sin ninguna dirección.<br><br>El ataque especial dirigido hacia arriba, por lo general, se utiliza para volver al escenario ya que normalmente tiene una gran movilidad.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Special attacks.jpg" width="600" height="338"></td><td><img src="Up special.gif" width="600" height="338"></td>
+			</table>
+		</li>
+		</li>
+		<h2><b>Ataques aéreos: </b> Finalmente, tenemos los ataques aéreos. Son esenciales a la hora de hacer combos y para hacer daño en general. Se realizan pulsando el botón de ataque en el aire ,moviendo la palanca o no.</h2>
+			<table align="center" cellpadding="30">
+			<tr><td><img src="Air attack.png" width="600" height="338"></td>
+			</table>
+		</li>
+		</ul>
+	</li>
+	</ul>
+	<center>
+		<h2> Sergio Palacios López <br>
+			<script>
+			DameLaFechaHora();
+			</script>
+		</h2>
+	</center>

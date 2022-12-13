@@ -1,0 +1,97 @@
+<html>
+
+<head> 
+	<meta charset="utf-8"/>
+	<title>Formulario</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="Icon.png">
+		<Script language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+
+	</script>
+	
+</head>
+
+<body background="Background.png">
+	<img width="1500" height="300" src="Banner.jpg">
+	<table bgcolor="#E31616" align="right" border="5">
+	<tr>
+	<td><a href="Index.html">Inicio</a></td>
+	<td><a href="Fundamentos.html">Fundamentos</a></td>
+	<td><a href="Mecánicas.html">Mecánicas</a></td>
+	<td><a href="Formulario.html">Formulario</a></td>
+	</tr>
+	</table>
+	<br><br><br><br><br><br><br>
+	<center>
+	<h1>Sede de Nintendo España</h1>
+	<iframe src="https://www.google.com/maps/d/embed?mid=15rBKSIdM8hIDxr_DRMvBxf7H9xk&hl=es&ehbc=2E312F" width="1400" height="480"></iframe>
+	</center>
+	<br><br><br><br>
+	<h1>Torneos:</h1>
+		<fieldset>
+		<legend> Datos de inscripción para torneos </legend>
+		<p> Modalidad </p>
+		<input type="checkbox" name="Casilla 1"> Singles </input> <br>
+		<input type="checkbox" name="Casilla 2"> Teams </input> <br> 
+		<input type="checkbox" name="Casilla 3"> Squad Strike </input> <br>
+		<p> Nivel de habilidad </p>
+		<input type="radio" name="Círculo"> Principiante </input> <br>
+		<input type="radio" name="Círculo"> Medio </input> <br>
+		<input type="radio" name="Círculo"> Experto </input> <br>
+		</fieldset>
+		<fieldset>
+		<legend> Datos de personales </legend>
+		<p> Nombre: <input type="text" name="Caja 1"></input></p>
+		<p> Dirección: <input type="text" name="Caja 2"></input></p>
+		<p> Teléfono: <input type="text" name="Caja 3"></input></p>
+		<p> Edad: <input type="text" name="Caja 4"></input></p>
+		<p> Descripción breve: </p>
+		<textarea rows="20" cols="50"></textarea>
+		</fieldset>
+		<fieldset>
+		<legend> Método de pago </legend>
+		<select name="Pago">
+		<option>Efectivo (en el local)</option>
+		<option>Tarjeta</option>
+		<option>PayPal</option>
+		</select>
+		</fieldset>
+		<input type="button" onclick="mensaje('Formulario enviado')" value="Ok"></input>
+		<br><br><br>
+	<center>
+		<h2> Sergio Palacios López <br>
+			<script>
+			DameLaFechaHora();
+			</script>
+		</h2>
+	</center>

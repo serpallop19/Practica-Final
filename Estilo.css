@@ -1,0 +1,66 @@
+a{
+	color:white;
+	font: 200% Gotham;
+}
+
+h1{
+	color:red;
+	font: 400% Gotham;
+}
+
+h2{
+	color:white;
+	font: 185% Gotham;
+}
+
+div{
+	width :900px;
+	height :250px;
+	color :white;
+	font-size :30px;
+}
+
+.centrado{
+	float:center;
+	height:175px;
+}
+
+.derecha{
+	float:right;
+	height :250px;
+}
+
+.img1{
+	position:absolute;
+	top:415px;
+	bottom:;
+	left:1000px;
+	right:0px;
+}
+
+.img2{
+	position:absolute;
+	top:650px;
+	bottom:;
+	left:1000px;
+	right:0px;
+}
+
+.img3{
+	position:absolute;
+	top:1150px;
+	bottom:;
+	left:50px;
+	right:0px;	
+}
+
+hr{
+	bgcolor:red;
+	border:none;
+}
+
+fieldset{
+	
+	color:white;
+	
+}

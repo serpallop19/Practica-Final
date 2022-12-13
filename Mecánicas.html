@@ -1,0 +1,87 @@
+<html>
+
+<head> 
+	<meta charset="utf-8"/>
+	<title>Mecánicas</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="Icon.png">
+		<Script language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+
+	</script>
+	
+</head>
+
+<body background="Background.png">
+	<img width="1500" height="300" src="Banner.jpg">
+	<table bgcolor="#E31616" align="right" border="5">
+	<tr>
+	<td><a href="Index.html">Inicio</a></td>
+	<td><a href="Fundamentos.html">Fundamentos</a></td>
+	<td><a href="Mecánicas.html">Mecánicas</a></td>
+	<td><a href="Formulario.html">Formulario</a></td>
+	</tr>
+	</table>
+	<br><br>
+	<ul>
+	<li>
+		<h1>Otras mecánicas:</h1><h2>La siguiente sección será dedicada a otras mecánicas del juego importantes que afectan al gameplay.</h2><br>
+	</li>
+	<li>
+		<h1>Rabia:</h1><div>Esta mecánica incrementa la potencia de los ataques (no el daño) de un personaje a medida que gana más o menos porcentaje de daño.<br><br>Es una característica que ayuda sobre todo a las eliminaciones, pero al ser la potencia de ataque más grande, es más complicado hacer combos</div><img class="img2" src="Rabia.png" height="300" width="450"></img>
+	</li>
+	<li>
+		<h1>Escudo perfecto:</h1><img src="Parry.gif" height="300" width="450"></img><div class="derecha">Se realiza soltando el botón de escudo justo cuando se recibe un ataque. De esta forma se ganan frames que pueden llegar a ser muy útiles para contraatacar.<br><br>Este parry es distinto al de las entregas de la saga anteriores, puesto que se realizaba presionando el boton de escudo en el momento perfecto.</div><br><br><br>
+	</li>
+	<li>
+		<h1>Amortiguación:</h1><h2>Esta técnica es muy importante, ya que permite resistir el rebote contra una pared o contra el suelo. Si se amortigua en el suelo, es posible quedarse en el sitio o bien rodar hacia la izquierda o la derecha.<br><br>Cuando se amortigua contra la pared de un escenario se cancela toda la velocidad anterior haciendo que sea más sencillo volver al escenario.</h2>
+		<table width="1450"><tr>
+			<td align="center"><img src="Tech2.gif" height="300" width="450"></img></td><td align="center"><img src="Tech.gif" height="300" width="450"></img></td>
+		</tr></table>
+	</li><br><br>
+	<li>
+		<h1>Spike:</h1><h2>Un spike es un ataque que envía al oponente hacia abajo hasta que el retroceso termine. Un spike no debe de ser confundido con un smash meteórico, que también envía al oponente hacia abajo pero que puede ser cancelado antes de que el retroceso termine.<br><br> Este tipo de ataques son muy útiles para conseguir eliminaciones fuera del escenario. Una variación de este es el stage spike, que consiste en impulsar el enemigo hacia el escenario y rebotar hacia abajo, que puede ser evitado amortiguando.</h2><br><br>
+		<table width="1450"><tr>
+			<td align="center"><img src="Spike.jpeg" height="300" width="450"></img></td><td align="center"><img src="Stage_Spike.png" height="300" width="450"></img></td>
+		</tr></table>
+	</li>
+	<br><br><br>
+	<center>
+		<h2> Sergio Palacios López <br>
+			<script>
+			DameLaFechaHora();
+			</script>
+		</h2>
+	</center>
+</body>
+
+</html>
